@@ -31,7 +31,9 @@ export default function Navbar({ className }: { className?: string }) {
         >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/agama">pendidikan agama 2 SKS</HoveredLink>
-            <HoveredLink href="/pancasila">pendidikan pancasila 2 SKS</HoveredLink>
+            <HoveredLink href="/pancasila">
+              pendidikan pancasila 2 SKS
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem
@@ -40,7 +42,9 @@ export default function Navbar({ className }: { className?: string }) {
           item="MATEMATIKA DAN BAHASA"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/english">basic academy english 2 SKS</HoveredLink>
+            <HoveredLink href="/english">
+              basic academy english 2 SKS
+            </HoveredLink>
             <HoveredLink href="/kalkulus">kalkulus 1 3 SKS</HoveredLink>
             <HoveredLink href="/fisika">fisika dasar 3 SKS</HoveredLink>
           </div>

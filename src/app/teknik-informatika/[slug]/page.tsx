@@ -5,6 +5,7 @@ import axios from "axios";
 import Courses from "@/components/defaultUi/courses";
 import { FloatingDock } from "@/components/defaultUi/dock";
 import { TextGenerateEffectSection } from "@/components/defaultUi/text-generate";
+import { BASE_API_URL } from "../../../../utils/constant";
 
 export default function Page() {
   const params = useParams();
@@ -15,9 +16,7 @@ export default function Page() {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3000/api/ti/${slug}`,
-        );
+        const response = await axios.get(`${BASE_API_URL}/api/ti/${slug}`);
         setCourseList(response.data);
       } catch (error) {
         console.error("Error fetching products:", error);
