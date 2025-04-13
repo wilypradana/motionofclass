@@ -28,7 +28,7 @@ export async function GET() {
         await dbConnect();
         const db = mongoose.connection.db;
 
-        const courses = await db.collection('Courses').find({67fbb83b2fa09622d78d5f0c}).toArray();
+        const courses = await db.collection('Courses').find({}).toArray();
 
         return NextResponse.json({ message: "Data found", data: courses }, { status: 200 });
     } catch (error) {
