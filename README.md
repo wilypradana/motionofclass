@@ -6,6 +6,13 @@ app/api/courses/{slug} - API route for course data
 app/courses/{slug} - Frontend route for course pages
 ```
 
+
+
+### frontend
+```
+app/components/ui - dont change this folder!
+```
+ 
 ## Getting Started
 
 ### Prerequisites
