@@ -9,7 +9,7 @@ export default function Custom404() {
         Halamannya ga ada
       </p>
       <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-        Jangan sedih kamu bisa kontribusi disini >> <a href=" https://discord.gg/3p3jBAcJZS" className="text-blue-500">discord</a>
+        Jangan sedih kamu bisa kontribusi disini  &#8658; <a href=" https://discord.gg/3p3jBAcJZS" className="text-blue-500">discord</a>
       </p>
     </WavyBackground>
   );

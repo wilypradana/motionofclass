@@ -10,19 +10,21 @@ import { BASE_API_URL } from "../../../../utils/constant";
 export default function Page() {
   const params = useParams();
   const slug = params.slug;
-  const [courseList, setCourseList] = useState<any>(null);
+  const [courseList, setCourseList] = useState(null);
   const ref = useRef(null);
 
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const response = await axios.get(`${BASE_API_URL}/api/ti/${slug}`);
+        const response = await axios.get(`${BASE_API_URL}/api/courses/${slug}`);
+    
         setCourseList(response.data);
+        
       } catch (error) {
-        console.error("Error fetching products:", error);
+        console.error("Error fetching courses:", error);
       }
     };
-
+  
     fetchCourse();
   }, [slug]);
 

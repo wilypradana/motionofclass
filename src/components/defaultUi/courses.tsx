@@ -5,8 +5,9 @@ import axios from "axios";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { BASE_API_URL } from "../../../utils/constant";
 
-export default function Courses(props) {
+export default function Courses() {
   const params = useParams();
   const slug = params.slug;
   const [courseList, setCourseList] = useState([]);
@@ -20,7 +21,7 @@ export default function Courses(props) {
     const fetchCourse = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/ti/${slug}`,
+          `${BASE_API_URL}/api/courses/${slug}`,
         );
         setCourseList(response.data);
       } catch (error) {
