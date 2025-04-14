@@ -17,6 +17,7 @@ export default function Courses() {
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
+// its api need change tooooo
   useEffect(() => {
     const fetchCourse = async () => {
       try {
