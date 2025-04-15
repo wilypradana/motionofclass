@@ -55,7 +55,7 @@ export default function Navbar({ className }: { className?: string }) {
 
       {/* Mobile Dropdown */}
       {mobileOpen && (
-        <div className="md:hidden bg-dark text-white shadow-lg rounded-lg p-4 mt-2 mx-4 space-y-4">
+        <div className="md:hidden bg-black text-white shadow-lg rounded-lg p-4 mt-2 mx-4 space-y-4">
           <div>
             <p className="font-semibold">TI</p>
             <div className="flex flex-col space-y-2 text-sm pl-2">
