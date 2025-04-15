@@ -55,7 +55,7 @@ export default function Navbar({ className }: { className?: string }) {
 
       {/* Mobile Dropdown */}
       {mobileOpen && (
-        <div className="md:hidden bg-white shadow-lg rounded-lg p-4 mt-2 mx-4 space-y-4">
+        <div className="md:hidden bg-dark text-white shadow-lg rounded-lg p-4 mt-2 mx-4 space-y-4">
           <div>
             <p className="font-semibold">TI</p>
             <div className="flex flex-col space-y-2 text-sm pl-2">
@@ -77,8 +77,8 @@ export default function Navbar({ className }: { className?: string }) {
             <p className="font-semibold">MATEMATIKA DAN BAHASA</p>
             <div className="flex flex-col space-y-2 text-sm pl-2">
               <HoveredLink href="/english">basic academy english 2 SKS</HoveredLink>
-              <HoveredLink href="/kalkulus">kalkulus 1 3 SKS</HoveredLink>
-              <HoveredLink href="/fisika">fisika dasar 3 SKS</HoveredLink>
+              <HoveredLink href="/courses/67fd496ebe49113f15fa71bc">kalkulus 1 3 SKS</HoveredLink>
+              <HoveredLink href="/courses/67fd496ebe49113f15fa71b6">fisika dasar 3 SKS</HoveredLink>
             </div>
           </div>
         </div>
