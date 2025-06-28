@@ -59,9 +59,9 @@ export default function Navbar({ className }: { className?: string }) {
           <div>
             <p className="font-semibold">TI</p>
             <div className="flex flex-col space-y-2 text-sm pl-2">
-              <HoveredLink href="/teknik-informatika/67fbb83b2fa09622d78d5f0c">logika informatika 3 SKS</HoveredLink>
-              <HoveredLink href="/teknik-informatika/67fbb83b2fa09622d78d5f11">pengantar teknologi informasi 2 SKS</HoveredLink>
-              <HoveredLink href="/teknik-informatika/67fbb83b2fa09622d78d5f16">algoritma dan pemrogramman 2 SKS</HoveredLink>
+              <HoveredLink href="/courses/67fbb83b2fa09622d78d5f0c">logika informatika 3 SKS</HoveredLink>
+              <HoveredLink href="/courses/67fbb83b2fa09622d78d5f11">pengantar teknologi informasi 2 SKS</HoveredLink>
+              <HoveredLink href="/courses/67fbb83b2fa09622d78d5f16">algoritma dan pemrogramman 2 SKS</HoveredLink>
             </div>
           </div>
 
